@@ -1,0 +1,38 @@
+ALGORITHM checkPoint 
+VAR 
+chaine:string:="hello wold !.";
+chaine2:string:"";
+nb:integer;
+nbr_word:integr;
+nbr_vowel:integer;
+l:integer;
+i:integer;
+BEGIN
+ READ(chaine)
+ //longueur d'une chaine
+ l:=length(chaine)
+ //number of words
+ if(chaine(0):=" ") 
+     chaine1:=delete(chaine,0,1)
+ END 
+ for i FROM 0 TO length-1(chaine) DO 
+  if(ch(i):=" ") THEN
+   nb:=nb+1;
+  END_FOR
+  nbr_word:=nb+1;
+  //number of vowels
+FOR i FROM 0 TO length-1(chaine1) DO 
+  switch (chaine1(i)) DO 
+   case "a" :nb:=nb+1;
+   case "e" :nb:=nb+1;
+   case "i" :nb:=nb+1;
+   case "o" :nb:=nb+1;
+   case "u" :nb:=nb+1;
+   case "y" :nb:=nb+1;
+   default nb:=nb+0;
+END_switch
+//output
+WRITE("This string contain",l)
+WRITE("Number of words:",nbr_word+1)
+WRITE("Number of vowels",nbr_vowel)
+END
